@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-solid {
+  color: #0332c8;
+  margin-top: 23px;
+  padding: 9px;
+  cursor: pointer;
+}
+
+.fa-trash {
+  color: #c83200;
+}
+
+.fa-arrow-up {
+  color: rgb(179, 177, 177);
+}
+
+.fa-plus {
+  border-radius: 54%;
+  color: white;
+  font-size: 16px;
+  padding: 3px;
+  background-color: #0332c8;
+}
+
+table {
+  margin-left: 201px;
+  padding-top: 23px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f6a9a9;
+}

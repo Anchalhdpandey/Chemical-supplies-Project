@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical supply list</title>
+    <script
+      src="https://kit.fontawesome.com/a82e46f715.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chemical supplies</h1>
+      <div class="child">
+        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-arrow-down"></i>
+        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-trash"></i>
+        <i class="fa-solid fa-arrows-rotate"></i>
+        <i class="fa-solid fa-floppy-disk"></i>
+      </div>
+    </div>
+    <table id="chemicalTable">
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th id="sortId">ID</th>
+          <th id="sortName">Chemical Name</th>
+          <th id="sortVendor">Vendor</th>
+          <th id="sortDensity">Density (g/m³)</th>
+          <th id="sortViscosity">Viscosity (m²/s)</th>
+          <th>Packaging</th>
+          <th>Pack Size</th>
+          <th>Unit</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
