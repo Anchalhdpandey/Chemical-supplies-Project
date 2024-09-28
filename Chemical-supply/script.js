@@ -174,7 +174,7 @@ function loadTable() {
   chemicalData.forEach((chemical, index) => {
     const row = document.createElement("tr");
 
-    // Add checkbox column
+    // Adding checkbox column
     const checkboxCell = document.createElement("td");
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -182,7 +182,7 @@ function loadTable() {
     checkboxCell.appendChild(checkbox);
     row.appendChild(checkboxCell);
 
-    // Add each chemical property to the row
+    // Adding each chemical property to the row
     const idCell = document.createElement("td");
     idCell.innerText = chemical.id;
     row.appendChild(idCell);
@@ -219,7 +219,7 @@ function loadTable() {
     quantityCell.innerText = chemical.quantity;
     row.appendChild(quantityCell);
 
-    // Add edit button column with pencil icon
+    // Adding edit button column with pencil icon
     const editCell = document.createElement("td");
     const editButton = document.createElement("i");
     editButton.className = "fa-solid fa-pencil";
@@ -246,7 +246,7 @@ function editRow(index) {
   if (newChemicalName && newQuantity) {
     chemicalData[index].chemicalName = newChemicalName;
     chemicalData[index].quantity = parseFloat(newQuantity);
-    loadTable(); // Reload the table after editing
+    loadTable(); // Reloads the table after editing
     saveToLocalStorage(); // Save updated data to localStorage
   }
 }
@@ -296,7 +296,7 @@ document.querySelector(".fa-plus").addEventListener("click", () => {
   const newUnit = prompt("Enter unit:");
   const newQuantity = parseFloat(prompt("Enter quantity:"));
 
-  // Validate if required fields are properly filled
+  // Validation check for if required fields are properly filled
   if (
     newChemicalName &&
     newVendor &&
@@ -322,10 +322,10 @@ document.querySelector(".fa-plus").addEventListener("click", () => {
       quantity: newQuantity,
     };
 
-    // Add the new chemical to the chemicalData array
+    // Adding the new chemical to the chemicalData array
     chemicalData.push(newChemical);
 
-    // Reload the table to reflect the new data
+    // Reloads the table to reflect the new data
     loadTable();
 
     // Save the updated data to localStorage
