@@ -164,7 +164,6 @@ let chemicalData = [
     "unit": "L",
     "quantity": 30
   }
-  // Add more chemical data here...
 ];
 
 // Function to load the table
