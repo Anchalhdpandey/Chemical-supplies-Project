@@ -1,4 +1,5 @@
-The Chemical Supply List is a web application that allows users to manage a list of chemical supplies, including adding, editing, and deleting items from the list. This application utilizes HTML, CSS, and JavaScript, making it a simple yet effective tool for inventory management.
+The Chemical Supply List is a web application that allows users to manage a list of chemical supplies, including adding, editing, and deleting items from the list.
+This application utilizes HTML, CSS, and JavaScript, making it a simple yet effective tool for inventory management.
 
 Features
 Display a table of chemical supplies with essential details.
